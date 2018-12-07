@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册界面</title>
+</head>
+<body>
+<form action="" method="post">
+用户名：<input type="text" name="username" ><br>
+密&nbsp;&nbsp;码：<input type="password" name="password"><br>
+年&nbsp;&nbsp;龄：<input type="text" name="age"><br>
+Email：<input type="text" name="email">
+    <input type="submit" value="注册" onclick="addUser()">
+</form>
+<script type="text/javascript">
+        function addUser() {
+            var form = document.forms[0];
+            form.action = "register";
+            form.method = "post";
+            form.submit();
+        }
+    </script>
+</body>
+</html>
